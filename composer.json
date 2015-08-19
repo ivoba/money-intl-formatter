@@ -1,0 +1,30 @@
+{
+    "name": "sebastian/money-intl-formatter",
+    "description": "Implementation of SebastianBergmann\\Money\\Formatter that uses PHP's built-in NumberFormatter",
+    "keywords": ["money"],
+    "homepage": "https://www.github.com/sebastianbergmann/money-intl-formatter",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Sebastian Bergmann",
+            "email": "sebastian@phpunit.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.5",
+        "ext-intl": "*",
+        "sebastian/money": "~2.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
+
