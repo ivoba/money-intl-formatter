@@ -29,15 +29,16 @@ class IntlFormatter implements Formatter
     private $numberFormatter;
 
     /**
-     * @param  string $locale
+     * @param string $locale
+     * @param int    $style
      * @return static
      */
-    public static function fromLocale($locale)
+    public static function create($locale, $style = NumberFormatter::CURRENCY)
     {
         return new static(
             new NumberFormatter(
                 $locale,
-                NumberFormatter::CURRENCY
+                $style
             )
         );
     }
@@ -63,4 +64,5 @@ class IntlFormatter implements Formatter
             $money->getCurrency()->getCurrencyCode()
         );
     }
+
 }
